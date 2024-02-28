@@ -28,7 +28,7 @@ jsを使って外部から直接テキストを入力した場合、inputのな�
 function sampleTagging(text){
     return text.replace(/&lt;.+?&gt;/g,'<span style="color:#bcbaba;">$&</span>');
 }
-const myHLTer: MyHighlighter = {
+const myHLTer = {
     tagging: sampleTagging,
     textarea:document.getElementById("my-textarea"),
     observe_mode:"strict"
