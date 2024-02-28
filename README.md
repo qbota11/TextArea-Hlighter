@@ -29,7 +29,7 @@ function sampleTagging(text){
     return text.replace(/&lt;.+?&gt;/g,'<span style="color:#bcbaba;">$&</span>');
 }
 const myHLTer: MyHighlighter = {
-    tagging: sampleHighlighter,
+    tagging: sampleTagging,
     textarea:document.getElementById("my-textarea"),
     observe_mode:"strict"
   };
